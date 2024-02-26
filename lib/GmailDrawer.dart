@@ -202,6 +202,7 @@ debugShowCheckedModeBanner: false,
                         fontSize: 18,
 
                       ),),
+
                     ],
                   ),
                 ),
@@ -209,8 +210,26 @@ debugShowCheckedModeBanner: false,
               ),
           ),
           appBar: AppBar(),
+          body: Center(
+            child: TextButton(onPressed: (){
+               Navigator.pushNamed(context, '/drower');
+              }, child: Container(
+              height: 30,
+                width: 60,
+               decoration: BoxDecoration(
+                 color: Colors.black12,
+                 borderRadius: BorderRadius.circular(10),
+               ),
+                child: Center(
+                  child: Text("Next",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                    color: Colors.black
+                              ),),
+                ),
+              ))
 
         ),
+      ),
       ),
     );
   }

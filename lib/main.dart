@@ -1,6 +1,8 @@
 import 'package:drawer/GmailDrawer.dart';
 import 'package:flutter/material.dart';
 
+import 'drower.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,6 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      routes: {
        '/':(context)=>Gmail(),
+       '/drower':(context)=>drower(),
      },
     );
   }
